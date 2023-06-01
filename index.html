@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beauty Care Appointment</title>
+    <style>
+      .formgroup {
+        background-color: black;
+        padding: 10px;
+        width: 35%;
+        margin-left: 35%;
+      }
+      table {
+        margin-left: 16%;
+      }
+      h2 {
+        color: white;
+        background-color: #2f4f4f;
+        text-align: center;
+        border-radius: 7px;
+      }
+      th,
+      td {
+        border: 2px solid orangered;
+        padding: 2px;
+        height: 40px;
+        color: #fff;
+      }
+
+      th {
+        text-align: left;
+      }
+      #cname,
+      #mail,
+      #phno,
+      #address,
+      #date,
+      #service {
+        background-color: black;
+      }
+      #terms {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      a {
+        color: #0094e3;
+      }
+      #time {
+        width: 89%;
+        border-color: orangered;
+        color: blue;
+        background-color: black;
+      }
+      #address {
+        height: 70px;
+        margin: 5px;
+      }
+      ::placeholder {
+        color: blue;
+      }
+      #submit {
+        background-color: black;
+        color: #fff;
+        border: 1px solid gainsboro;
+        border-radius: 7px;
+        margin-left: 20px;
+        font-weight: 600;
+      }
+      #submit:hover {
+        background-color: #fff;
+        color: black;
+      }
+      #cname,
+      #mail,
+      #phno,
+      #address,
+      #time,
+      #date,
+      #service {
+        border-color: orangered;
+        margin-left: 4px;
+        border-radius: 7px;
+      }
+      #terms {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="formgroup">
+      <h2>Beauty Care Center-Appointment</h2>
+      <table>
+        <tbody>
+          <tr>
+            <th>Name*</th>
+            <td>
+              <input type="text" id="cname" placeholder="Enter your name" />
+            </td>
+          </tr>
+          <tr>
+            <th>Gender*</th>
+            <td>
+              <input type="radio" id="male" name="gender" />
+              <label for="male">Male</label>
+              <input type="radio" id="fmale" name="gender" />
+              <label for="fmale">Female</label>
+              <input type="radio" id="other" name="gender" />
+              <label for="other">Other</label>
+            </td>
+          </tr>
+          <tr>
+            <th>E-mail address</th>
+            <td>
+              <input
+                type="email"
+                id="mail"
+                placeholder="Example:abc@gmail.com"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>Mobile No*</th>
+            <td>
+              <input type="tel" id="phno" placeholder="Enter your mobile no" />
+            </td>
+          </tr>
+          <tr>
+            <th>Services*</th>
+            <td>
+              <input type="text" id="service" />
+            </td>
+          </tr>
+          <tr>
+            <th>Date*</th>
+            <td>
+              <input type="text" id="date" placeholder="mm//dd//yyyy" />
+            </td>
+          </tr>
+          <tr>
+            <th>Time*</th>
+            <td>
+              <select id="time">
+                <option value="-Select one-">-Select one-</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th>Address</th>
+            <td>
+              <input
+                type="text"
+                id="address"
+                placeholder="Enter your address"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div>
+        <input type="checkbox" id="terms" />
+        <label for="terms">
+          <a href="privacy">
+            I agree to the terms of service and privacy policy.</a
+          >
+        </label>
+      </div>
+      <input type="submit" id="submit" value="submit" />
+    </form>
+  </body>
+</html>
